@@ -4,6 +4,13 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'mooinvoicing',
     environment: environment,
+    contentSecurityPolicy: { 
+      'connect-src': "'self' wss://*.firebaseio.com",
+      'script-src': "'self' 'unsafe-eval' firebaseio.com localhost:4200",
+      'style-src': "'self' 'unsafe-inline' maxcdn.bootstrapcdn.com fonts.googleapis.com",
+      'font-src': "'self' fonts.gstatic.com maxcdn.bootstrapcdn.com",
+    },
+    firebase: 'https://luminous-torch-4501.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

@@ -1,0 +1,23 @@
+{{#fm-form action='saveClient'}}
+	{{fm-field type='text' value=clientName label='Client Name' errors=controller.errors.clientName}}
+	{{fm-field type='text' value=clientEmail label='Client Email' errors=controller.errors.clientEmail}}
+	{{fm-submit value='Save Client'}}
+{{/fm-form}}
+
+
+
+{{!-- <div class="form-group">
+		<label for="clientName">
+			Client Name
+		</label>
+    {{input type="text" placeholder="Testerprises Inc 2000" value=clientName class="form-control"}}
+</div>
+<div class="form-group">
+		<label for="clientName">
+			Email
+		</label>
+    {{input type="text" placeholder="email@test.com" value=clientEmail class="form-control"}}
+</div>
+<button {{action 'saveClient'}} class="btn btn-primary">Save Client</button> --}}
+
+{{!-- {{outlet}} --}}
