@@ -1,17 +1,4 @@
-<nav id="nav" class="navbar navbar-default">
-	<div class="container">
-		<div class="navbar-header">
-			<div class="navbar-brand">
-				{{#link-to 'index'}}Moo Invoicing{{/link-to}}
-			</div>
-		</div>
-		<div id="navbar" class="navbar-collapse collapse">
-			<ul class="nav navbar-nav">
-				{{#link-to 'clients' tagName='li'}}<a>Clients</a>{{/link-to}}
-			</ul>
-		</div>
-	</div>
-</nav>
+{{partial 'layouts/navbar'}}
 
 <div class="container">
 	{{outlet}}

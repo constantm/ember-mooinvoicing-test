@@ -1,26 +1,24 @@
 <section id="clients">
 
-	<div class="row">
-		<div class="col-md-12">
-			<h3>Clients
-				{{#link-to 'clients.new' class="btn btn-success pull-right"}}
-						New Client
-				{{/link-to}}
-			</h3>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-3">
-			<ul>
-			{{#each client in model}}
-				<li>{{client.clientName}}</li>
-			{{/each}}
-			</ul>
-		</div>
-		<div class="col-md-8">
-			{{outlet}}
-		</div>
-	</div>
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Clients
+        {{#link-to 'clients.new' class="btn btn-success pull-right"}}
+            New Client
+        {{/link-to}}
+      </h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <ul>
+      {{outlet 'sidebar'}}
+      </ul>
+    </div>
+    <div class="col-md-8">
+      {{outlet}}
+    </div>
+  </div>
 
 </section>
 

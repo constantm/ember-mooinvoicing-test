@@ -7,7 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.resource('clients', function() {
-    this.route('new', function() {});
+    this.route('new');
   });
 });
 
