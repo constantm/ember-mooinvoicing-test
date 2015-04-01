@@ -1,6 +1,6 @@
-{{#fm-form action='saveClient'}}
-	{{fm-field type='text' value=clientName label='Client Name' errors=controller.errors.clientName}}
-	{{fm-field type='text' value=clientEmail label='Client Email' errors=controller.errors.clientEmail}}
+{{#fm-form action="save"}}
+	{{fm-field type='text' value=model.clientName label='Client Name' }}
+	{{fm-field type='text' value=model.clientEmail label='Client Email' }}
 	{{fm-submit value='Save Client'}}
 {{/fm-form}}
 
